@@ -16,11 +16,11 @@ class FileStackTrace extends Equatable {
 
   factory FileStackTrace.parse(Map<String, dynamic> map) {
     return FileStackTrace(
-      file: map['file'],
-      line: map['line'],
-      function: map['function'],
-      cClass: map['class'],
-      type: map['type'],
+      file: map['file'] ?? "",
+      line: map['line'] ?? "",
+      function: map['function'] ?? "",
+      cClass: map['class'] ?? "",
+      type: map['type'] ?? "",
     );
   }
 
